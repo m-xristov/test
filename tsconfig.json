@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        "target": "es5", //defines what sort of code ts generates, es5 because it's what most browsers currently UNDERSTANDS.
+        "module": "commonjs",
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "watch": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitAny": false,
+        "allowSyntheticDefaultImports": true,
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        //"allowJs": true
+        "lib": [
+          "es2015",
+          "dom"
+      ],
+      "typeRoots": [
+          "./node_modules/@types"
+      ],
+      "types": [
+          "jquery",
+          "jasmine",
+          "karma",
+          "node",
+          "webpack",
+          "webpack-env"
+      ]
+    },
+    "files": [
+        "typings/index.d.ts",
+        "src/index.ts"
+    ],
+    "exclude": [
+        "src/**/*.spec.ts",
+        "node_modules",
+        "demos",
+        "dist"
+    ],
+    "include": [
+        "./src/**/*.ts"
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "workbench.editor.showTabs": true,
+    "typescript.tsserver.trace": "verbose",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.js.map": true,
+        "**/*.js": {"when": "$(basename).ts"},
+        "**/*.d.ts": {"when": "$(basename).ts"}
+    }
+}

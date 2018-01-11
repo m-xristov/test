@@ -1,0 +1,5 @@
+{
+    "files" : "./src/**/*.{js, html, css, ts, js.map}",
+    "server" : { "baseDir" : "./src" },
+    "https" : true
+}
